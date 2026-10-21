@@ -1,0 +1,143 @@
+IQ-TREE 2.1.4-beta COVID-edition built Jun 24 2021
+
+Input file name: cytb_aligned.fasta
+Type of analysis: tree reconstruction + non-parametric bootstrap (1000 replicates)
+Random seed number: 599922
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 9 sequences with 1140 nucleotide sites
+Number of constant sites: 861 (= 75.5263% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 861 (= 75.5263% of all sites)
+Number of parsimony informative sites: 145
+Number of distinct site patterns: 156
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 45.3415
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 45.3415
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.295
+  pi(C) = 0.3085
+  pi(G) = 0.1295
+  pi(T) = 0.267
+
+Rate matrix Q:
+
+  A   -0.5646   0.02701    0.5142   0.02337
+  C   0.02583    -1.097   0.01134      1.06
+  G     1.171   0.02701    -1.222   0.02337
+  T   0.02583     1.225   0.01134    -1.262
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.1755
+
+ Category  Relative_rate  Proportion
+  1         0.0002022      0.25
+  2         0.02093        0.25
+  3         0.3167         0.25
+  4         3.662          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3412.1773 (s.e. 87.8223)
+Unconstrained log-likelihood (without tree): -3084.4411
+Number of free parameters (#branches + #model parameters): 20
+Akaike information criterion (AIC) score: 6864.3547
+Corrected Akaike information criterion (AICc) score: 6865.1053
+Bayesian information criterion (BIC) score: 6965.1303
+
+Total tree length (sum of branch lengths): 0.5791
+Sum of internal branch lengths: 0.0957 (16.5282% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Puma_concolor' is drawn at root
+Numbers in parentheses are  standard bootstrap support (%)
+
+                          +------Leopardus_guttulus
+                       +--| (66)
+                       |  +-------Leopardus_tigrinus
+                +------| (92)
+                |      |     +------Leopardus_guigna
+                |      +-----| (96)
+                |            +------Leopardus_geoffroyi
+             +--| (63)
+             |  +--------------Leopardus_jacobita
+   +---------| (82)
+   |         +-------------------Leopardus_colocola
++--| (45)
+|  +----------Leopardus_pardalis
+|
++---------Leopardus_wiedii
+|
++-----------------------------------------------------------Puma_concolor
+
+Tree in newick format:
+
+((((((Leopardus_guttulus:0.0228261372,Leopardus_tigrinus:0.0290699200)66:0.0037098713,(Leopardus_guigna:0.0258176537,Leopardus_geoffroyi:0.0246748448)96:0.0203869568)92:0.0248197216,Leopardus_jacobita:0.0502776359)63:0.0036968833,Leopardus_colocola:0.0663209759)82:0.0348856294,Leopardus_pardalis:0.0364010382)45:0.0082186340,Leopardus_wiedii:0.0327648030,Puma_concolor:0.1952463688);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -3411.922239
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
+                 +------Leopardus_guttulus
+              +--| (66)
+              |  +--------Leopardus_tigrinus
+       +------| (92)
+       |      |     +-------Leopardus_guigna
+       |      +-----| (96)
+       |            +------Leopardus_geoffroyi
+    +--| (63)
+    |  +---------------Leopardus_jacobita
++---| (82)
+|   +--------------------Leopardus_colocola
+|
+|      +-----------Leopardus_wiedii
++------| (55)
+|      +----------Leopardus_pardalis
+|
++----------------------------------------------------------Puma_concolor
+
+
+Consensus tree in newick format: 
+
+(((((Leopardus_guttulus:0.0226806969,Leopardus_tigrinus:0.0289709164)66:0.0037742486,(Leopardus_guigna:0.0259021575,Leopardus_geoffroyi:0.0243681705)96:0.0201698702)92:0.0244430255,Leopardus_jacobita:0.0497747878)63:0.0035633805,Leopardus_colocola:0.0656900229)82:0.0131198214,(Leopardus_wiedii:0.0395862853,Leopardus_pardalis:0.0357314167)55:0.0240393730,Puma_concolor:0.1844066743);
+
+TIME STAMP
+----------
+
+Date and time: Sun Oct 18 14:51:17 2026
+Total CPU time used: 0.575415 seconds (0h:0m:0s)
+Total wall-clock time used: 0.4044699669 seconds (0h:0m:0s)
+
